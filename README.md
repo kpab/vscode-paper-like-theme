@@ -13,7 +13,39 @@
 
 ## インストール
 
-### ローカル開発版の使用
+### 方法1: VSIXファイルからインストール（推奨）
+
+デバッグ環境がなくても、VSIXファイルを作成してインストールできます。
+
+1. このリポジトリをクローン
+   ```bash
+   git clone https://github.com/kpab/vscode-paper-like-theme.git
+   cd vscode-paper-like-theme
+   ```
+
+2. VSIXファイルをパッケージ化
+   ```bash
+   npm run package
+   ```
+   または
+   ```bash
+   npx @vscode/vsce package
+   ```
+
+3. VS Codeにインストール
+   ```bash
+   npm run install-extension
+   ```
+   または
+   ```bash
+   code --install-extension paper-notebook-light-0.0.1.vsix
+   ```
+
+4. VS Codeでテーマを選択
+   - `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`) を押す
+   - **Paper Notebook Light** を選択
+
+### 方法2: 開発ホストで使用（F5デバッグ）
 
 1. このリポジトリをクローン
 2. VS Codeでフォルダを開く

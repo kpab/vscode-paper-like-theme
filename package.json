@@ -8,6 +8,15 @@
     "vscode": "^1.80.0"
   },
   "categories": ["Themes"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kpab/vscode-paper-like-theme"
+  },
+  "scripts": {
+    "package": "npx @vscode/vsce package",
+    "install-extension": "code --install-extension paper-notebook-light-0.0.1.vsix"
+  },
   "contributes": {
     "themes": [
       {
