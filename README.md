@@ -1,61 +1,63 @@
 # Paper Notebook Light
 
-紙っぽいノート風のVS Codeライトテーマ
+A warm, paper-like light theme for VS Code with ink-style colors.
 
-## コンセプト
+English | [日本語](README.ja.md)
 
-白いディスプレイ感ではなく、**少し黄味がかった紙の上にインクで書いているような質感**のテーマです。
+## Concept
 
-- 目にやさしいオフホワイト背景
-- 濃すぎないインク色（ダークブラウン〜ダークグレー）
-- コメントや無効コードは薄い鉛筆風グレー
-- 「ノートに書いた読みやすい文字」をイメージ
+Instead of a bright white screen, this theme gives you the feeling of **writing with ink on slightly yellowed paper**.
 
-## インストール
+- Eye-friendly off-white background
+- Ink-style text colors (dark brown to dark gray, not too harsh)
+- Pencil-gray comments and disabled code
+- Designed to feel like "readable handwritten text in a notebook"
 
-### 方法1: VSIXファイルからインストール（推奨）
+## Installation
 
-デバッグ環境がなくても、VSIXファイルを作成してインストールできます。
+### Method 1: Install from VSIX File (Recommended)
 
-1. このリポジトリをクローン
+You can create and install a VSIX file even without a debug environment.
+
+1. Clone this repository
    ```bash
    git clone https://github.com/kpab/vscode-paper-like-theme.git
    cd vscode-paper-like-theme
    ```
 
-2. VSIXファイルをパッケージ化
+2. Package the VSIX file
    ```bash
    npm run package
    ```
-   または
+   or
    ```bash
    npx @vscode/vsce package
    ```
 
-3. VS Codeにインストール
+3. Install in VS Code
    ```bash
    npm run install-extension
    ```
-   または
+   or
    ```bash
    code --install-extension paper-notebook-light-0.0.1.vsix
    ```
 
-4. VS Codeでテーマを選択
-   - `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`) を押す
-   - **Paper Notebook Light** を選択
+4. Select the theme in VS Code
+   - Press `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`)
+   - Select **Paper Notebook Light**
 
-### 方法2: 開発ホストで使用（F5デバッグ）
+### Method 2: Development Host (F5 Debug)
 
-1. このリポジトリをクローン
-2. VS Codeでフォルダを開く
-3. `F5` を押して拡張開発ホストを起動
-4. 開発ホスト側で `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`) を押してテーマ選択
-5. **Paper Notebook Light** を選択
+1. Clone this repository
+2. Open the folder in VS Code
+3. Press `F5` or run **Extension** from the Run and Debug panel
+4. In the development host, press `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`) to select a theme
+5. Select **Paper Notebook Light**
 
-## 推奨フォント設定
+## Recommended Font Settings
 
-テーマと合わせて、以下のフォント設定を `settings.json` に追加すると、より紙ノート風の雰囲気になります。
+For a more authentic notebook feel, add these font settings to your `settings.json`:
 
 ```json
 {
@@ -68,23 +70,23 @@
 }
 ```
 
-### 推奨フォント例
+### Recommended Fonts
 
-- **Iosevka** - 整った手書き風・可読性高い
-- **JetBrains Mono** - モダンで読みやすい
-- **Cascadia Code** - Microsoftの美しいコーディングフォント
+- **Iosevka** - Clean handwriting-inspired style with high readability
+- **JetBrains Mono** - Modern and easy to read
+- **Cascadia Code** - Beautiful coding font by Microsoft
 
-> 注：フォントは事前にシステムにインストールしておく必要があります。
+> Note: Fonts must be installed on your system beforehand.
 
-## カラーパレット
+## Color Palette
 
-- **背景色**: `#F5F0E6` - 温かみのある紙色
-- **前景色**: `#3A2E23` - インク風のダークブラウン
-- **キーワード**: `#854D2C` - 濃いブラウン（太字）
-- **文字列**: `#7A5136` - ブラウン系
-- **コメント**: `#9E9386` - 鉛筆風グレー（イタリック）
-- **数値**: `#A86434` - オレンジブラウン
+- **Background**: `#F5F0E6` - Warm paper color
+- **Foreground**: `#3A2E23` - Ink-style dark brown
+- **Keywords**: `#854D2C` - Deep brown (bold)
+- **Strings**: `#7A5136` - Brown tones
+- **Comments**: `#9E9386` - Pencil-gray (italic)
+- **Numbers**: `#A86434` - Orange-brown
 
-## ライセンス
+## License
 
 MIT
