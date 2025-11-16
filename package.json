@@ -2,7 +2,7 @@
   "name": "paper-notebook-light",
   "displayName": "Paper Notebook Light",
   "description": "A warm, paper-like light theme with ink-style colors.",
-  "publisher": "your-name",
+  "publisher": "kpab",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
