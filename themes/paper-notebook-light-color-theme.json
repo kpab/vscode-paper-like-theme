@@ -4,19 +4,19 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "keyword": { "foreground": "#854D2C", "bold": true },
-    "string": "#7A5136",
+    "string": "#5C6E4E",
     "number": "#A86434",
     "function": "#6C3F2C",
     "method": "#6C3F2C",
-    "type": "#925F3C",
-    "class": "#925F3C",
-    "interface": "#925F3C",
-    "enum": "#925F3C",
-    "namespace": "#925F3C",
+    "type": "#4E5F73",
+    "class": "#4E5F73",
+    "interface": "#4E5F73",
+    "enum": "#4E5F73",
+    "namespace": "#4E5F73",
     "variable": "#3A2E23",
     "parameter": "#3A2E23",
     "property": "#4A3C2E",
-    "comment": { "foreground": "#9E9386", "italic": true }
+    "comment": { "foreground": "#8A7D6D", "italic": true }
   },
   "colors": {
     "editor.background": "#F5F0E6",
@@ -25,8 +25,8 @@
     "editor.lineHighlightBackground": "#EDE3D2",
     "editor.selectionBackground": "#D9CBB4",
     "editor.inactiveSelectionBackground": "#E3D7C4",
-    "editorLineNumber.foreground": "#B6A58C",
-    "editorLineNumber.activeForeground": "#7D6A52",
+    "editorLineNumber.foreground": "#94826A",
+    "editorLineNumber.activeForeground": "#5C4B37",
     "sideBar.background": "#F3EDE2",
     "sideBar.foreground": "#4A3C2E",
     "statusBar.background": "#E3D7C4",
@@ -205,7 +205,7 @@
     {
       "scope": ["string"],
       "settings": {
-        "foreground": "#7A5136"
+        "foreground": "#5C6E4E"
       }
     },
     {
@@ -229,13 +229,13 @@
     {
       "scope": ["entity.name.type", "support.type"],
       "settings": {
-        "foreground": "#925F3C"
+        "foreground": "#4E5F73"
       }
     },
     {
       "scope": ["comment"],
       "settings": {
-        "foreground": "#9E9386",
+        "foreground": "#8A7D6D",
         "fontStyle": "italic"
       }
     },
