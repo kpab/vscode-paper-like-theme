@@ -8,52 +8,31 @@ English | [日本語](README.ja.md)
 
 Instead of a bright white screen, this theme gives you the feeling of **writing with ink on slightly yellowed paper**.
 
-- Eye-friendly off-white background
-- Ink-style text colors (dark brown to dark gray, not too harsh)
-- Pencil-gray comments and disabled code
-- Designed to feel like "readable handwritten text in a notebook"
+- Eye-friendly off-white background — no harsh pure white
+- Ink-style syntax colors: brown ink for keywords, faded green and blue ink accents for strings and types
+- Soft pencil-toned comments and line numbers, tuned for readability
+- The entire workbench — terminal, sidebar, widgets, menus — stays in paper tones
 
-## Installation
+## Screenshots
 
-### Method 1: Install from VSIX File (Recommended)
+### TypeScript
 
-You can create and install a VSIX file even without a debug environment.
+![TypeScript](images/overview.png)
 
-1. Clone this repository
-   ```bash
-   git clone https://github.com/kpab/vscode-paper-like-theme.git
-   cd vscode-paper-like-theme
-   ```
+### Markdown
 
-2. Package the VSIX file
-   ```bash
-   npm run package
-   ```
-   or
-   ```bash
-   npx @vscode/vsce package
-   ```
+![Markdown](images/markdown.png)
 
-3. Install in VS Code
-   ```bash
-   npm run install-extension
-   ```
-   or
-   ```bash
-   code --install-extension paper-notebook-light-0.0.1.vsix
-   ```
+### Python
 
-4. Select the theme in VS Code
-   - Press `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`)
-   - Select **Paper Notebook Light**
+![Python](images/python.png)
 
-### Method 2: Development Host (F5 Debug)
+## Usage
 
-1. Clone this repository
-2. Open the folder in VS Code
-3. Press `F5` or run **Extension** from the Run and Debug panel
-4. In the development host, press `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`) to select a theme
-5. Select **Paper Notebook Light**
+Install from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=kpab.paper-notebook-light) (or run `ext install kpab.paper-notebook-light` from Quick Open — `Ctrl+P` / `Cmd+P`), then:
+
+1. Press `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`)
+2. Select **Paper Notebook Light**
 
 ## Recommended Font Settings
 
@@ -80,12 +59,34 @@ For a more authentic notebook feel, add these font settings to your `settings.js
 
 ## Color Palette
 
-- **Background**: `#F5F0E6` - Warm paper color
-- **Foreground**: `#3A2E23` - Ink-style dark brown
-- **Keywords**: `#854D2C` - Deep brown (bold)
-- **Strings**: `#7A5136` - Brown tones
-- **Comments**: `#9E9386` - Pencil-gray (italic)
-- **Numbers**: `#A86434` - Orange-brown
+| Element | Color | Description |
+| --- | --- | --- |
+| Background | `#F5F0E6` | Warm paper color |
+| Foreground | `#3A2E23` | Ink-style dark brown |
+| Keywords | `#854D2C` | Deep brown (bold) |
+| Strings | `#5C6E4E` | Muted green ink |
+| Types | `#4E5F73` | Faded blue ink |
+| Functions | `#6C3F2C` | Dark roasted brown |
+| Numbers | `#A86434` | Orange-brown |
+| Comments | `#8A7D6D` | Soft pencil gray (italic) |
+
+## Development
+
+Want to try local changes or build the extension yourself?
+
+1. Clone this repository
+   ```bash
+   git clone https://github.com/kpab/vscode-paper-like-theme.git
+   cd vscode-paper-like-theme
+   ```
+
+2. Try it in the Extension Development Host: open the folder in VS Code, press `F5`, then pick the theme with `Ctrl+K Ctrl+T` / `Cmd+K Cmd+T`
+
+3. Or package and install a VSIX:
+   ```bash
+   npm run package
+   npm run install-extension
+   ```
 
 ## License
 

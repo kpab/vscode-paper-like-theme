@@ -8,52 +8,31 @@
 
 白いディスプレイ感ではなく、**少し黄味がかった紙の上にインクで書いているような質感**のテーマです。
 
-- 目にやさしいオフホワイト背景
-- 濃すぎないインク色（ダークブラウン〜ダークグレー）
-- コメントや無効コードは薄い鉛筆風グレー
-- 「ノートに書いた読みやすい文字」をイメージ
+- 目にやさしいオフホワイト背景（真っ白を使わない）
+- インク風のシンタックスカラー：キーワードは茶インク、文字列は深緑、型は褪せた青インクの差し色
+- コメントや行番号は可読性を保った柔らかい鉛筆トーン
+- ターミナル・サイドバー・ウィジェット・メニューまで、ワークベンチ全体が紙トーンで統一
 
-## インストール
+## スクリーンショット
 
-### 方法1: VSIXファイルからインストール（推奨）
+### TypeScript
 
-デバッグ環境がなくても、VSIXファイルを作成してインストールできます。
+![TypeScript](images/overview.png)
 
-1. このリポジトリをクローン
-   ```bash
-   git clone https://github.com/kpab/vscode-paper-like-theme.git
-   cd vscode-paper-like-theme
-   ```
+### Markdown
 
-2. VSIXファイルをパッケージ化
-   ```bash
-   npm run package
-   ```
-   または
-   ```bash
-   npx @vscode/vsce package
-   ```
+![Markdown](images/markdown.png)
 
-3. VS Codeにインストール
-   ```bash
-   npm run install-extension
-   ```
-   または
-   ```bash
-   code --install-extension paper-notebook-light-0.0.1.vsix
-   ```
+### Python
 
-4. VS Codeでテーマを選択
-   - `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`) を押す
-   - **Paper Notebook Light** を選択
+![Python](images/python.png)
 
-### 方法2: 開発ホストで使用（F5デバッグ）
+## 使い方
 
-1. このリポジトリをクローン
-2. VS Codeでフォルダを開く
-3. `F5` を押すか、Run and Debug パネルから **Extension** を実行
-4. 開発ホスト側で `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`) を押してテーマ選択
-5. **Paper Notebook Light** を選択
+[Marketplace](https://marketplace.visualstudio.com/items?itemName=kpab.paper-notebook-light) からインストール（またはクイックオープン `Ctrl+P` / `Cmd+P` で `ext install kpab.paper-notebook-light` を実行）した後：
+
+1. `Ctrl+K Ctrl+T`（macOS: `Cmd+K Cmd+T`）を押す
+2. **Paper Notebook Light** を選択
 
 ## 推奨フォント設定
 
@@ -80,12 +59,34 @@
 
 ## カラーパレット
 
-- **背景色**: `#F5F0E6` - 温かみのある紙色
-- **前景色**: `#3A2E23` - インク風のダークブラウン
-- **キーワード**: `#854D2C` - 濃いブラウン（太字）
-- **文字列**: `#7A5136` - ブラウン系
-- **コメント**: `#9E9386` - 鉛筆風グレー（イタリック）
-- **数値**: `#A86434` - オレンジブラウン
+| 要素 | 色 | 説明 |
+| --- | --- | --- |
+| 背景色 | `#F5F0E6` | 温かみのある紙色 |
+| 前景色 | `#3A2E23` | インク風のダークブラウン |
+| キーワード | `#854D2C` | 濃いブラウン（太字） |
+| 文字列 | `#5C6E4E` | くすんだ深緑インク |
+| 型 | `#4E5F73` | 褪せた青インク |
+| 関数 | `#6C3F2C` | 焦げ茶 |
+| 数値 | `#A86434` | オレンジブラウン |
+| コメント | `#8A7D6D` | 柔らかい鉛筆グレー（イタリック） |
+
+## 開発
+
+ローカルで変更を試したい・自分でビルドしたい場合:
+
+1. このリポジトリをクローン
+   ```bash
+   git clone https://github.com/kpab/vscode-paper-like-theme.git
+   cd vscode-paper-like-theme
+   ```
+
+2. 拡張機能開発ホストで試す：VS Code でフォルダを開いて `F5` を押し、`Ctrl+K Ctrl+T` / `Cmd+K Cmd+T` でテーマを選択
+
+3. または VSIX をパッケージしてインストール:
+   ```bash
+   npm run package
+   npm run install-extension
+   ```
 
 ## ライセンス
 
