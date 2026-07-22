@@ -15,17 +15,17 @@ Instead of a bright white screen, this theme gives you the feeling of **writing 
 
 ## Screenshots
 
-<!-- TODO: Add screenshots before publishing. Suggested shots:
-  images/overview.png   — full editor with sidebar + terminal open
-  images/typescript.png — TypeScript code sample
-  images/markdown.png   — Markdown editing
+### TypeScript
 
-![Overview](images/overview.png)
-![TypeScript](images/typescript.png)
+![TypeScript](images/overview.png)
+
+### Markdown
+
 ![Markdown](images/markdown.png)
--->
 
-*Screenshots coming soon.*
+### Python
+
+![Python](images/python.png)
 
 ## Usage
 

@@ -2,3 +2,7 @@
 .vscode-test/**
 .gitignore
 .git/**
+.claude/**
+images/**
+*.vsix
+README.ja.md

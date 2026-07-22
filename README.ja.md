@@ -15,17 +15,17 @@
 
 ## スクリーンショット
 
-<!-- TODO: 公開前にスクリーンショットを追加。推奨ショット:
-  images/overview.png   — サイドバー+ターミナルを開いたエディタ全景
-  images/typescript.png — TypeScriptのコード例
-  images/markdown.png   — Markdown編集画面
+### TypeScript
 
-![全景](images/overview.png)
-![TypeScript](images/typescript.png)
+![TypeScript](images/overview.png)
+
+### Markdown
+
 ![Markdown](images/markdown.png)
--->
 
-*スクリーンショットは準備中です。*
+### Python
+
+![Python](images/python.png)
 
 ## 使い方
 
