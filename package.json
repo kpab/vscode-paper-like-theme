@@ -3,11 +3,16 @@
   "displayName": "Paper Notebook Light",
   "description": "A warm, paper-like light theme with ink-style colors.",
   "publisher": "kpab",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": ["Themes"],
+  "keywords": ["theme", "light", "paper", "sepia", "warm", "notebook", "ink"],
+  "galleryBanner": {
+    "color": "#EADFCC",
+    "theme": "light"
+  },
   "license": "MIT",
   "icon": "icon.png",
   "repository": {
@@ -16,7 +21,7 @@
   },
   "scripts": {
     "package": "npx @vscode/vsce package",
-    "install-extension": "code --install-extension paper-notebook-light-0.0.1.vsix"
+    "install-extension": "code --install-extension \"paper-notebook-light-$npm_package_version.vsix\""
   },
   "contributes": {
     "themes": [
