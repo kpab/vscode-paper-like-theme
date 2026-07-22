@@ -27,12 +27,12 @@
 
 *スクリーンショットは準備中です。*
 
-## インストール
+## 使い方
 
-1. VS Code の**拡張機能**ビューを開く（`Ctrl+Shift+X` / `Cmd+Shift+X`）
-2. **Paper Notebook Light** を検索
-3. **インストール**をクリック
-4. `Ctrl+K Ctrl+T`（macOS: `Cmd+K Cmd+T`）を押して **Paper Notebook Light** を選択
+[Marketplace](https://marketplace.visualstudio.com/items?itemName=kpab.paper-notebook-light) からインストール（またはクイックオープン `Ctrl+P` / `Cmd+P` で `ext install kpab.paper-notebook-light` を実行）した後：
+
+1. `Ctrl+K Ctrl+T`（macOS: `Cmd+K Cmd+T`）を押す
+2. **Paper Notebook Light** を選択
 
 ## 推奨フォント設定
 

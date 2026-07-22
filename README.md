@@ -27,12 +27,12 @@ Instead of a bright white screen, this theme gives you the feeling of **writing 
 
 *Screenshots coming soon.*
 
-## Installation
+## Usage
 
-1. Open the **Extensions** view in VS Code (`Ctrl+Shift+X` / `Cmd+Shift+X`)
-2. Search for **Paper Notebook Light**
-3. Click **Install**
-4. Press `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`) and select **Paper Notebook Light**
+Install from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=kpab.paper-notebook-light) (or run `ext install kpab.paper-notebook-light` from Quick Open — `Ctrl+P` / `Cmd+P`), then:
+
+1. Press `Ctrl+K Ctrl+T` (macOS: `Cmd+K Cmd+T`)
+2. Select **Paper Notebook Light**
 
 ## Recommended Font Settings
 
