@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.1] - 2026-07-28
+
+### Fixed
+- Whitespace dots (`editor.renderWhitespace`) were invisible: the color was identical to the selection background, so dots never showed while selecting text
+- Terminal ANSI white / bright white were unreadable against the paper background (bright white was the exact background color)
+
 ## [0.1.0] - 2026-07-22
 
 ### Added
