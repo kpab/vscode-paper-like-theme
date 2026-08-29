@@ -4,6 +4,7 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "keyword": { "foreground": "#854D2C", "bold": true },
+    "operator": { "foreground": "#4A3C2E", "bold": false },
     "string": "#5C6E4E",
     "number": "#A86434",
     "function": "#6C3F2C",
@@ -288,6 +289,25 @@
   "tokenColors": [
     {
       "scope": ["keyword", "storage"],
+      "settings": {
+        "foreground": "#854D2C",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["keyword.operator"],
+      "settings": {
+        "foreground": "#4A3C2E",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator.new",
+        "keyword.operator.expression",
+        "keyword.operator.logical.python",
+        "keyword.operator.wordlike"
+      ],
       "settings": {
         "foreground": "#854D2C",
         "fontStyle": "bold"
