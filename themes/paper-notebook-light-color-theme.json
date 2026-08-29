@@ -234,7 +234,23 @@
     "textBlockQuote.background": "#EDE3D2",
     "textBlockQuote.border": "#C1995B",
     "textCodeBlock.background": "#EDE3D2",
-    "textPreformat.foreground": "#6C3F2C"
+    "textPreformat.foreground": "#6C3F2C",
+    "notebook.editorBackground": "#F0E9DB",
+    "notebook.cellEditorBackground": "#F5F0E6",
+    "notebook.cellBorderColor": "#D1C1AA",
+    "notebook.focusedCellBorder": "#C1995B",
+    "notebook.inactiveFocusedCellBorder": "#D1C1AA",
+    "notebook.focusedEditorBorder": "#C1995B",
+    "notebook.selectedCellBackground": "#E3D7C4",
+    "notebook.selectedCellBorder": "#D1C1AA",
+    "notebook.cellStatusBarItemHoverBackground": "#E3D7C4",
+    "notebook.cellToolbarSeparator": "#D1C1AA",
+    "notebook.outputContainerBackgroundColor": "#F0E9DB",
+    "notebook.outputContainerBorderColor": "#D1C1AA",
+    "notebook.symbolHighlightBackground": "#D9CBB480",
+    "notebookStatusSuccessIcon.foreground": "#4A7A4A",
+    "notebookStatusErrorIcon.foreground": "#9A3A3A",
+    "notebookStatusRunningIcon.foreground": "#4E5F73"
   },
   "tokenColors": [
     {
