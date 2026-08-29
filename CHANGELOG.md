@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.2] - 2026-08-29
+
+### Added
+- Paper-toned bracket pair colorization and bracket pair guides (previously showed VS Code's default bright blue/green/purple)
+- Notebook (Jupyter) UI colors: cell borders, focused/selected cells, output containers, and execution status icons
+- Colors for inlay hints, inline suggestion ghost text, selection/hover/range highlights, and folded-region background
+- Merge conflict block colors (current/incoming/common) in ink tones
+- Terminal command decoration colors (shell integration marks)
+- Ink-palette colors for suggest/outline symbol icons
+
+### Changed
+- Operators (`=`, `+`, `=>`, ...) are no longer bold brown; word-like operators (`new`, `typeof`, `in`, `and`, ...) keep the keyword style
+
 ## [0.1.1] - 2026-07-28
 
 ### Fixed
