@@ -1,0 +1,54 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      VSCE_PAT: ${{ secrets.VSCE_PAT }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check tag matches package.json version
+        run: |
+          pkg="$(node -p "require('./package.json').version")"
+          tag="${GITHUB_REF_NAME#v}"
+          if [ "$pkg" != "$tag" ]; then
+            echo "package.json is $pkg but tag is $tag" >&2
+            exit 1
+          fi
+
+      - name: Validate theme JSON
+        run: |
+          node -e "
+            const fs = require('fs');
+            const raw = fs.readFileSync('themes/paper-notebook-light-color-theme.json', 'utf8');
+            const theme = JSON.parse(raw);
+            const bad = Object.entries(theme.colors).filter(([, v]) => !/^#[0-9A-Fa-f]{6}([0-9A-Fa-f]{2})?$/.test(v));
+            if (bad.length) throw new Error('invalid color values: ' + JSON.stringify(bad));
+          "
+
+      - name: Package VSIX
+        run: npx @vscode/vsce package
+
+      - name: Create GitHub release with the VSIX
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" ./*.vsix --generate-notes
+
+      # Runs only when the VSCE_PAT repository secret is set; otherwise the
+      # Marketplace update stays manual (upload the VSIX from the release).
+      - name: Publish to Marketplace
+        if: env.VSCE_PAT != ''
+        run: npx @vscode/vsce publish --packagePath ./*.vsix
