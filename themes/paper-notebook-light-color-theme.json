@@ -295,7 +295,7 @@
       }
     },
     {
-      "scope": ["keyword.operator"],
+      "scope": ["keyword.operator", "storage.type.function.arrow"],
       "settings": {
         "foreground": "#4A3C2E",
         "fontStyle": ""
@@ -306,7 +306,38 @@
         "keyword.operator.new",
         "keyword.operator.expression",
         "keyword.operator.logical.python",
-        "keyword.operator.wordlike"
+        "keyword.operator.wordlike",
+        "keyword.operator.delete",
+        "keyword.operator.typeof",
+        "keyword.operator.instanceof",
+        "keyword.operator.cast",
+        "keyword.operator.sizeof",
+        "keyword.operator.alignof",
+        "keyword.operator.alignas",
+        "keyword.operator.typeid",
+        "keyword.operator.noexcept",
+        "keyword.operator.and.cpp",
+        "keyword.operator.or.cpp",
+        "keyword.operator.not.cpp",
+        "keyword.operator.xor.cpp",
+        "keyword.operator.and_eq.cpp",
+        "keyword.operator.or_eq.cpp",
+        "keyword.operator.xor_eq.cpp",
+        "keyword.operator.not_eq.cpp",
+        "keyword.operator.bitand.cpp",
+        "keyword.operator.bitor.cpp",
+        "keyword.operator.compl.cpp",
+        "keyword.operator.type.php",
+        "keyword.operator.logical.scss",
+        "keyword.operator.logical.lua",
+        "keyword.operator.logical.perl",
+        "keyword.operator.logical.and.media.css",
+        "keyword.operator.logical.not.media.css",
+        "keyword.operator.logical.only.media.css",
+        "keyword.operator.logical.feature",
+        "keyword.operator.type-casting.swift",
+        "keyword.operator.as.groovy",
+        "keyword.operator.in.groovy"
       ],
       "settings": {
         "foreground": "#854D2C",

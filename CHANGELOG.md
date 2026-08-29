@@ -11,7 +11,7 @@
 - Ink-palette colors for suggest/outline symbol icons
 
 ### Changed
-- Operators (`=`, `+`, `=>`, ...) are no longer bold brown; word-like operators (`new`, `typeof`, `in`, `and`, ...) keep the keyword style
+- Symbolic operators (`=`, `+`, `=>`, ...) are no longer bold brown; word-like operators (`new`, `typeof`, `instanceof`, `sizeof`, C++ casts, `and`/`or`/`not` in Python/Lua/Perl/SCSS/CSS, Swift `as`/`is`, ...) keep the bold keyword style. Ruby, PHP, and CoffeeScript word logicals share a TextMate scope with `&&`/`||` and become regular weight as well
 
 ## [0.1.1] - 2026-07-28
 
