@@ -109,7 +109,7 @@
     "editorInlayHint.typeForeground": "#5C4B37",
     "editorInlayHint.parameterBackground": "#E3D7C4",
     "editorInlayHint.parameterForeground": "#5C4B37",
-    "editorGhostText.foreground": "#A8977E",
+    "editorGhostText.foreground": "#8D7A64",
     "editorError.foreground": "#9A3A3A",
     "editorWarning.foreground": "#A8752A",
     "editorInfo.foreground": "#4E5F73",
